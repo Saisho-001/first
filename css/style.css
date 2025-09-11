@@ -1,0 +1,49 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --background-color: #fff;
+    --text-color: #0f0c36;
+    --con-color: rgb(195, 196, 206);
+}
+
+[data-theme='dark'] {
+    --background-color: #140f46;
+    --text-color: #e0e0e0;
+    --con-color: rgb(59, 56, 74);
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#theme__toggle{
+    border: none;
+    background-color: var(--background-color);
+    border-radius: 100px;
+    transition: background-color 0.3s, color 0.3s;
+    margin: 1rem;
+}
+
+.dark__button{
+    background-color: var(--text-color);
+    border-radius: 100px;
+    width: 6rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark__button__text{
+    color: var(--background-color);
+    transition: color 0.3s;
+}
